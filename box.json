@@ -4,7 +4,7 @@
     "author":"Dan Card",
     "location":"",
     "directory":"learncf",
-    "createPackageDirectory":true,
+    "createPackageDirectory":false,
     "packageDirectory":"learncf",
     "homepage":"",
     "documentation":"",
