@@ -20,6 +20,7 @@
 <li>These functions have names and we can call them and pass in arguments with the format functionName(arg1,arg2,arg3,...)</li>
 <li>ColdFusion links to databases via a connection called a datasource, the credentials of which are stored on the server and have been set up for you. </li>
 <li>By using the &lt;dbinfo&gt; tag we can see the table/views in the database and the fields in a data table. </li>
+<li>Logic code can, and should be, placed in CFC files which can be accessed by View layer pages and other CFCs.</li>
 <li>Next week, we will look at getting data out of our datatables and onto a page!</li>
 <li>Take a break!</li>
 </ol>

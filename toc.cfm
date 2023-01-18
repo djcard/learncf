@@ -1,15 +1,16 @@
 <cfoutput>
-	<ul class="nav nav-stacked">
-		<li id="intro"><a href="#cgi.SCRIPT_NAME#?p=intro">Introduction</a></li>
-		<li><a href="#cgi.SCRIPT_NAME#?p=basicformat">Basic Format</a></li>
-        <li><a href="#cgi.SCRIPT_NAME#?p=math">Math (Don't Freak!)</a></li>
-        <li><a href="#cgi.SCRIPT_NAME#?p=typesandformatting">Data Types and Formatting</a></li>
-		<li><a href="#cgi.SCRIPT_NAME#?p=introvar">Intro to Variables</a></li>
-		<li><a href="#cgi.SCRIPT_NAME#?p=introcomplex1">Intro to Complex Variables-1:Objects</a></li>
-		<li><a href="#cgi.SCRIPT_NAME#?p=introcomplex2">Intro to Complex Variables-2:Arrays</a></li>
-        <li><a href="#cgi.SCRIPT_NAME#?p=urlforms">URLs and Forms</a></li>
-        <li><a href="#cgi.SCRIPT_NAME#?p=functions">Functions</a></li>
-		<li><a href="#cgi.SCRIPT_NAME#?p=DBs">Getting To Data</a></li>
-		<li><a href="#cgi.SCRIPT_NAME#?p=recap">Recap</a>
+	<ul class="nav flex-column">
+		<li class="navitem" id="intro"><a href="#cgi.SCRIPT_NAME#?p=Welcome">Welcome</a></li>
+		<li class="navitem"><a href="#cgi.SCRIPT_NAME#?p=basic_format_tag">Basic Format: Tag</a></li>
+        <li class="navitem"><a href="#cgi.SCRIPT_NAME#?p=math_and_stuff">Math (Don't Freak!)</a></li>
+        <li class="navitem"><a href="#cgi.SCRIPT_NAME#?p=Data_Types_and_Formatting">Data Types and Formatting</a></li>
+		<li  class="navitem"><a href="#cgi.SCRIPT_NAME#?p=Intro_To_Variables">Intro to Variables</a></li>
+		<li  class="navitem"><a href="#cgi.SCRIPT_NAME#?p=Intro_To_Complex_Variables_Objects_Structs">Intro to Complex Variables-1:Objects</a></li>
+		<li  class="navitem"><a href="#cgi.SCRIPT_NAME#?p=Intro_To_Complex_Variables_Arrays">Intro to Complex Variables-2:Arrays</a></li>
+        <li  class="navitem"><a href="#cgi.SCRIPT_NAME#?p=Forms_And_URLs">URLs and Forms</a></li>
+        <li  class="navitem"><a href="#cgi.SCRIPT_NAME#?p=functions_revised">Functions</a></li>
+		<li  class="navitem"><a href="#cgi.SCRIPT_NAME#?p=Intro_To_Data">Getting To Data</a></li>
+		<li  class="navitem"><a href="#cgi.SCRIPT_NAME#?p=Scripts_And_Components">Script and Components</a></li>
+		<li  class="navitem"><a href="#cgi.SCRIPT_NAME#?p=recap">Recap</a>
 	</ul>
 </cfoutput>    
