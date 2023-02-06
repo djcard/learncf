@@ -1,7 +1,13 @@
 <article id="ae6219ee-d5a3-4cd5-9b95-8d2ac9950fb1" class="page sans">
     <h2>Welcome and Introduction</h2>
-    <div class="page-body"><p id="156de2a6-4035-481c-a1cd-ecfe84a03036" class="">This week&#x27;s activities include starting to learn a scripting languages called CFML (ColdFusion Markup Language or ColdFusion or CF for short). It is a language which was created here in Boston in 1995 (which makes it a year younger than PHP!) by a company named Allaire. It is now on its 14th version and is championed by both a very active community of users and Adobe, who acquired it when they purchased Macromedia several years ago.
-        There is also a popular Open Source CFML server named Lucee which is available and a viable (and free) alternative to using Adobe ColdFusion. The two engines both parse CFML but also are starting to have a few idiosyncrasies and features of their own.
+    <div class="page-body"><p id="156de2a6-4035-481c-a1cd-ecfe84a03036" class="">This week&#x27;s activities include starting
+        to learn a scripting languages called CFML (ColdFusion Markup Language or ColdFusion or CF for short). It is a
+        language which was created here in Boston in 1995 (which makes it a year younger than PHP!) by a company named Allaire.
+        It is now on its 14th version (soon to be 15 with the upcoming 2023 release) and is championed by both a very active
+        community of users and Adobe, who acquired it when they purchased Macromedia several years ago.
+        There is also a popular Open Source CFML server named Lucee which is available and a viable (and free) alternative
+        to using Adobe ColdFusion. The two engines both parse CFML but also are starting to have a few idiosyncrasies and
+        features of their own.
     </p>
         <p id="4838a761-85de-4e69-950e-0877a813b554" class="">CF is a powerful language with which is is remarkably easy
             to get started. The main reason for this is its syntax (or format). Actually CFML has two syntaxes. It can be written in a TAG format which looks very similar to HTML with tags, properties and values. It also has a

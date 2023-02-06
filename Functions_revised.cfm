@@ -2,7 +2,7 @@
     <header><h1 class="page-title">Functions</h1></header>
     <div class="page-body"><p id="ee56a85c-e2fb-4296-bb1e-9b0c7e550912" class="">A function is a series of instructions
         that are given to a computer to be processed. A function can be written and then just sit there until it is
-        called upon to do its job. We talked a little bit before about functions when we used now(). Now() is a function
+        called upon to do its job. We talked a little bit before about functions when we used <code>now()</code>. Now() is a function
         built in ColdFusion that gets the time from the operating system. You can also write your own functions as well.
         This allows you to break your code into smaller chunks which makes them easier to read and easier to manage. It
         also allows us to write certain functionality that we are going to use over and over again in a way that we only
@@ -11,19 +11,19 @@
             where we need to frequently add two numbers together (I told you, it&#x27;s a simple example). We could
             write a function that would add the two numbers together for us and put it on our site or our page so we can
             access it. Let&#x27;s look at what this function could look like.</p>
-        <p id="6cf5c2f9-976a-490e-b7d0-cef999127f68" class="">&lt;cffunction name=&quot;addNumbers&quot; access=&quot;private&quot;
-            returntype=&quot;numeric&quot;&gt; &lt;--- the tag to make a function is &lt;cffunction&gt;. The&nbsp;<strong>NAME</strong>&nbsp;property
+        <p id="6cf5c2f9-976a-490e-b7d0-cef999127f68" class=""><code>&lt;cffunction name=&quot;addNumbers&quot; access=&quot;private&quot;
+            returntype=&quot;numeric&quot;&gt; </code>&lt;--- the tag to make a function is &lt;cffunction&gt;. The&nbsp;<strong>NAME</strong>&nbsp;property
             is how we reference the function.&nbsp;<strong>ACCESS</strong>&nbsp;defines what type of code can access this
             function. In this case only this page can access it.<strong>&nbsp;RETURNTYPE</strong>&nbsp;says that this function can
             only return numbers.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
-        <p id="4f0ce31b-b3e3-4127-9863-682f0040ecb5" class="">&lt;cfargument name=&quot;firstnum&quot; type=&quot;numeric&quot;&gt;
+        <p id="4f0ce31b-b3e3-4127-9863-682f0040ecb5" class=""><code>&lt;cfargument name=&quot;firstnum&quot; type=&quot;numeric&quot;&gt;</code>
             &lt;--- Information that a function needs to do its job are called &quot;Arguments&quot;. Our function is
-            going to add two numbers together so we need to pass in two numbers to it. That means that the function
+            going to add two numbers together so we need to pass two numbers to it. That means that the function
             needs to have two variables already assigned to &quot;catch&quot; those variables. We will call the first
             number &quot;firstnum&quot;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-        <p id="09f83d33-9f20-4fdb-96f3-8269530e7501" class="">&lt;cfargument name=&quot;secondnum&quot; type=&quot;numeric&quot;&gt;
+        <p id="09f83d33-9f20-4fdb-96f3-8269530e7501" class=""><code>&lt;cfargument name=&quot;secondnum&quot; type=&quot;numeric&quot;&gt;</code>
             &lt;--- And the second number &quot;secondnum&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-        <p id="f2c0572e-7fb7-4f52-8d8a-fb78f477b00e" class="">&lt;cfreturn #firstnum+secondnum#&gt; &lt;--- This hands
+        <p id="f2c0572e-7fb7-4f52-8d8a-fb78f477b00e" class=""><code>&lt;cfreturn #firstnum+secondnum#&gt;</code> &lt;--- This hands
             back the sum of the two numbers to whatever called it.</p>
         <p id="2e9ba006-016c-42b0-a978-5d6742aa34b6" class="">&lt;/cffunction&gt; &lt;--- This closes the function.</p>
         <p id="08e85713-e43a-4d5a-9e21-29b69db19cc7" class="">Here it is as a whole:</p>

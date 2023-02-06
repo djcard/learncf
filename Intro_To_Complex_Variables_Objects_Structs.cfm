@@ -4,16 +4,16 @@
         fairly simple. Even in the data types document we were calling them simple variables. If we have simple
         variables, are there such things are complex variables? Well, yes, or there would be no need for the
         distinction.</p>
-        <p id="895c22db-af2d-48c2-9233-645ee8ac058e" class="">If a string is simple variable and we can use a string to
+        <p id="895c22db-af2d-48c2-9233-645ee8ac058e" class="">If a string is a simple variable and we can use a string to
             represent a book title, is there a way to put a group a number of variables together that are all related
             and have them work as a unit? For example, you&#x27;ve probably put together by now that each simple
             variable is like one of the cells in your Excel spreadsheet. Is there a way that we can refer to an entire
             row, in this case, an entire book?</p>
-        <p id="10a72b69-8aa7-4260-b398-2d9123daa755" class="">Yes, and the answer is in using complex variables. There
-            are many types of complex variables but they all boil down to two principle types: Objects and Arrays. That&#x27;s
+    <p id="10a72b69-8aa7-4260-b398-2d9123daa755" class="">Yes, and the answer is in using <strong>complex</strong> variables. There
+            are many types of complex variables but most of them boil down to two principal types: Objects and Arrays. That&#x27;s
             it. Objects and Arrays. What are they? Good question.</p>
-        <p id="05a741f7-258a-435e-8f76-d584a47ace2a" class="">Objects (also called <strong>structures </strong>in CF)
-            are variables that you can attach values to by name. For example, I have an object named myCrayon that I am
+        <p id="05a741f7-258a-435e-8f76-d584a47ace2a" class="">Objects (also called <strong>structures</strong> in CF)
+            are variables to which you can attach other values by <strong>name</strong>. For example, I have an object named myCrayon that I am
             going to use to model a crayon. What are the properties that I am going to assign to it? Color? Length?
             Sharpened? Brand? Owner&#x27;s name? We can do all of those. The overall point is that we can refer to the
             properties of the object by their names. We write this in two ways - The first is called &quot;dot notation&quot;.
@@ -40,10 +40,10 @@ myCrayon.dateBought={ts &#x27;2022-01-10 23:18:49&#x27;}</code></pre>
             Objects &quot;Structs&quot; and you do need to define them ahead of time, so to process to create the above
             example would look like this:</p>
         <pre id="b9aa6bf9-2359-457c-8be0-27d33ff819d1" class="code code-wrap"><code>&lt;cfset myMovie=StructNew()&gt;
-&lt;cfset myMovie.cast=StructNew()&gt;
+&lt;cfset myMovie.cast={}&gt;
 &lt;cfset mymovie.cast.Tim=&quot;Brat Pitt&quot;&gt;
-&lt;cfset myMovie.sets=StructNew()&gt;
-&lt;cfset myMovie.sets.lowell=StructNew()&gt;
+&lt;cfset myMovie.sets={}&gt;
+&lt;cfset myMovie.sets.lowell={}&gt;
 &lt;cfset myMovie.sets.lowell.address=&quot;1 University Avenue&quot;&gt;
 </code></pre>
 <cfset myMovie=StructNew()>
@@ -78,6 +78,7 @@ myCrayon.dateBought={ts &#x27;2022-01-10 23:18:49&#x27;}</code></pre>
             at the tags above and ask, &quot;Isn&#x27;t that alot of typing? Isn&#x27;t there a shorthand method to
             making objects????&quot;. The answer is &quot;yes&quot;. That is alot of typing. Because of that, ColdFusion
             has implemented a shorthand to create structures. To use that shorthand, would look like this:</p>
+
         <p id="bf41c256-489d-4683-b1c3-d342d380f0cd" class="">&lt;cfset myMovie={</p>
         <p id="a95c68d9-9734-4935-ada0-8f4a595c5a60" class=""> &nbsp;&nbsp;&nbsp;&nbsp;cast:{</p>
         <p id="2cf8f2aa-417b-4b98-b63b-a20b621923cb" class=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tim: &quot;Brad Pitt&quot;,      </p>

@@ -35,12 +35,15 @@
         <p id="640fea9e-c8d0-4c85-bdbf-d58a28b92aa1" class="">Which brings up a good point: if a variable can be
             anything (date, number, string) and we need it to be something in particular, how can we check and see type
             of variable it is? CF (and other languages) give us a way of testing the TYPE of a variable as well as the
-            value of that variable. For example, to test if something is a date you can type #isdate(variablename)#. We
-            can see if our todayDate variable is a date by typing #isDate(todayDate)# and we get: true . ColdFusion
+            value of that variable. For example, to test if something is a date you can type #isValid("date",variablename)#. We
+            can see if our todayDate variable is a date by typing #isValid("date",todayDate)# and we get: true . ColdFusion
             outputs Booleans (Yes/No variables, remember?) as literally YES or NO. You can also use True or False, 1 or
             0, or blank and non-blank to set a boolean but it will display as YES/NO.</p>
+        <hr />
+        <p>You can see all the isValid possibilities here: <a target="_blank" href="https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-in-k/isvalid.html">https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-in-k/isvalid.html</a></p>
+        <hr />
         <p id="fdd75171-c4ef-49e8-af90-0149b2170f0f" class=""><strong>Exercise</strong>: On the myVariables.cfm page put
-            a &lt;hr/&gt; tag under the first part of the page and in this second, add up the price of your 10 books in
+            a &lt;hr/&gt; tag under the first part of the page and in the second, add up the price of your 10 books in
             your Excel Project. Can you do it with only one variable name? Let&#x27;s call it totalBookCost. Hint: Start
             with &lt;cfset totalBookCost=0&gt; and go from there. Think you can do it? Don&#x27;t forget to output the
             final amount to the page.</p></div>

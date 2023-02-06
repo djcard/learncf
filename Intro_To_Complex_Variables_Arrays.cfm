@@ -18,9 +18,9 @@
         <pre id="0c107a8e-933a-4217-acbc-2802a67ac1a1" class="code code-wrap"><code>&lt;cfset myArray=ArrayNew(1)&gt;
 &lt;cfset myArray[1]=&quot;Hello&quot;&gt;
 &lt;cfset myArray[2]=&quot;Goodbye&quot;&gt;
-&lt;cfset myArray[3]=StructNew()</code></pre>
-        <p id="554b319a-d873-4c35-b6d9-74dea26c5076" class="">We can also add items to the Array by using
-            ArrayAppend(myArray,&quot;whatever&quot;) which will add the string &quot;whatever&quot; to the end of the
+&lt;cfset myArray[3]={}</code></pre>
+        <p id="554b319a-d873-4c35-b6d9-74dea26c5076" class="">We can also add items to the Array by using the append member function.
+            myArray.append(&quot;whatever&quot;) which will add the string &quot;whatever&quot; to the end of the
             array called &quot;myArray&quot;. That&#x27;s handy if we don&#x27;t know what number we&#x27;re on and just
             want to add something. We can dump that out the same way by using &lt;cfdump var=&quot;#myArray#&quot;
             label=&quot;MyArray&quot;&gt; and we get this:</p>

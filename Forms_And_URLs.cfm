@@ -30,13 +30,13 @@
         <p id="98488562-ca7c-4f3d-94a7-3883722693d1" class="">Each language stores and processes these variables
             differently. CF stores them as a structure in a &quot;bucket&quot; called &quot;URL&quot;. For example, if I
             use &lt;cfdump and type &lt;cfdump var=&quot;#url#&quot; label=&quot;URL&quot; /&gt;</p>
-<cfdump var="#url#" label="URL" />
-        <p id="0bda5d60-f71a-4348-88c7-90e36c4307ae" class="">you&#x27;ll see a structure of all of the URL or &quot;GET&quot;
+<cfdump var="#url#" label="URL" /><cfoutput>
+        <p id="0bda5d60-f71a-4348-88c7-90e36c4307ae" class="">you&##x27;ll see a structure of all of the URL or &quot;GET&quot;
             variables that are being passed to this page. Copy this starting and including the &quot;&amp;&quot; sign:
-            &amp;name=Bob&amp;lastname=Marley. Paste it into the address bar AFTER ?p=urlforms so that it reads
-            ?p=urlforms&amp;name=Bob&amp;lastname=Marley and press Enter to load the page. See how the dump of the URL
-            variables changed above? The &amp; sign is used to seperate one variable from another. the format is
-            KEY=Value with no quotes.</p>
+            &amp;name=Bob&amp;lastname=Marley. Paste it into the address bar AFTER ?p=#url.p# so that it reads
+    <code>?p=#url.p#&amp;name=Bob&amp;lastname=Marley</code> and press Enter to load the page. See how the dump of the URL
+            variables changed above? The &amp; sign is used to separate one variable from another. the format is
+            KEY=Value with no quotes.</p></cfoutput>
         <p id="b5fd37b6-be12-4cb4-b006-9e5719b9df82" class=""><strong>Exercise #2</strong>:</p>
         <ol type="1" id="e56ad0b0-203a-419d-a335-d2cd98827245" class="numbered-list" start="1">
             <li><strong>Copy</strong> the index.cfm page from the /learncf folder into /learncf/exercises folder.</li>
@@ -45,7 +45,7 @@
             <li>Create a blank page called toc.cfm (starting with no HTML tags etc). The entire page will consist of
                 links, each one pointing to one of your exercise pages in the exercise folder. However, don&#x27;t
                 hardcode (type in) the name of the file. Use &quot;p&quot; as the name of your variable and pass in the
-                name of the file to which you are linking. The href attribute should be something like &#x27;href=&quot;index.cfm?p=myForm&quot;&#x27;
+                name of the file to which you are linking. The href attribute should be something like &##x27;href=&quot;index.cfm?p=myForm&quot;&#x27;
             </li>
         </ol>
         <ol type="1" id="7cf09cbe-affa-47c0-b890-710c45fec4db" class="numbered-list" start="3">
@@ -62,7 +62,32 @@
             created forms previous to this in HTML but without some sort of server side language, there is a very
             limited number of things you can do with that data. Now when we submit a form we can use the variables
             submitted in our page. Fill out and submit this form:</p>
-        <p id="022baae8-69ac-4bef-acbc-fb353d82888c" class="">Name PleaseFirst NameLast NameEmail</p>
+        <p id="022baae8-69ac-4bef-acbc-fb353d82888c" class="">
+            <cfoutput>
+                <div class="card">
+                    <div class="card-body">
+                <form action="#cgi.script_name#?p=#p#" method="post">
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="first" placeholder="First Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastname" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastname" name="last" placeholder="Last Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                <div>
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+                </form>
+                </div>
+                </div>
+            </cfoutput>
+        </p>
+    <p><cfdump var="#form#" label="Form Data" /></p>
         <p id="ed893646-9816-4d5c-aded-ce8f8d6b22c7" class="">See the output above? The form data is in a Struct called
             Form. We can access the individual pieces typing form.<em>variablename</em>.</p>
         <p id="c18f843d-9218-49a1-af5f-f930fd32dc4d" class="">A form has several different tags in it. Here are the
