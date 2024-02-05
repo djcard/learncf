@@ -21,13 +21,15 @@
             we doing a calculus final. Take a breath!</p>
         <p id="954ae71c-243b-46b6-8478-209b0f1f1e14" class="">As we've already seen, we wrap a math problem in #s
             like #5+3# which evaluates to 8. Here are the other mathematical operators:</p>
-        <p id="548b23a7-cb58-4d53-ac08-573759e79c40" class="">+ is for addition #5+7#='<cfoutput>#5+7#'</cfoutput></p>
-        <p id="b139ddf0-9522-4a57-a073-764ed9a0ed6d" class="">- is for subtraction #5-2#='<cfoutput>#5-2#'</cfoutput></p>
-        <p id="48fa2a99-047e-441c-a636-2f5cc5aabd96" class="">/ is for division #5/2#='<cfoutput>#5/2#'</cfoutput></p>
-        <p id="4b0200db-5b6a-483a-983a-77f508fd5ec1" class="">* is for multiplication #5*3#='<cfoutput>#5*3#'</cfoutput></p>
+        <p id="548b23a7-cb58-4d53-ac08-573759e79c40" class="">+ is for addition #5+7#=<cfoutput>#5+7#</cfoutput></p>
+        <p id="b139ddf0-9522-4a57-a073-764ed9a0ed6d" class="">- is for subtraction #5-2#=<cfoutput>#5-2#</cfoutput></p>
+        <p id="48fa2a99-047e-441c-a636-2f5cc5aabd96" class="">/ is for division #5/2#=<cfoutput>#5/2#</cfoutput></p>
+        <p id="4b0200db-5b6a-483a-983a-77f508fd5ec1" class="">* is for multiplication #5*3#=<cfoutput>#5*3#</cfoutput></p>
         <p id="ac750722-6295-4921-811d-bb0738c49231" class="">Mod is short for modulus which is the remainder after
-            division. #9 mod 2# = '<cfoutput>#9 mod 2#'</cfoutput></p>
-        <p id="608a1b56-8a48-451f-9ad5-959933b6fd90" class="">^ is used for exponents. #9^2#='<cfoutput>#9^2#'</cfoutput></p>
-        <p id="f739671c-13b1-4389-bd5c-730b77df1cfd" class="">'<strong>Exercise'</strong>: I don't think
-            we need one for this page, do you? Keep it it mind as a reference</p></div>
+            division. #9 mod 2# = <cfoutput>#9 mod 2#</cfoutput></p>
+        <p id="608a1b56-8a48-451f-9ad5-959933b6fd90" class="">^ is used for exponents. #9^2#=<cfoutput>#9^2#</cfoutput></p>
+        <p id="f739671c-13b1-4389-bd5c-730b77df1cfd" class=""><strong>Exercise</strong>: Create a page in the exercises folder cachebox.isColdBoxLinked( )
+            'math.cfm'.  Make an ordered list ( using the ol and li tags ). 
+            For each item, output a math problem using each operator listed here at least once and two numbers between 1 and 9 ( i.e. 1+9=????? ). 
+        </p></div>
 </article>

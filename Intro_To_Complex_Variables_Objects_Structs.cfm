@@ -5,15 +5,16 @@
         variables, are there such things are complex variables? Well, yes, or there would be no need for the
         distinction.</p>
         <p id="895c22db-af2d-48c2-9233-645ee8ac058e" class="">If a string is a simple variable and we can use a string to
-            represent a book title, is there a way to put a group a number of variables together that are all related
+            represent a book title, is there a way to group a number of variables together that are all related
             and have them work as a unit? For example, you&#x27;ve probably put together by now that each simple
             variable is like one of the cells in your Excel spreadsheet. Is there a way that we can refer to an entire
             row, in this case, an entire book?</p>
-    <p id="10a72b69-8aa7-4260-b398-2d9123daa755" class="">Yes, and the answer is in using <strong>complex</strong> variables. There
-            are many types of complex variables but most of them boil down to two principal types: Objects and Arrays. That&#x27;s
-            it. Objects and Arrays. What are they? Good question.</p>
+    <p id="10a72b69-8aa7-4260-b398-2d9123daa755" class="">Yes, and the answer is in using <strong>complex</strong> variables. 
+            There are many types of complex variables but most of them boil down to two principal types: Objects and Arrays.
+            That&#x27;s it. Objects and Arrays. What are they? Good question.</p>
         <p id="05a741f7-258a-435e-8f76-d584a47ace2a" class="">Objects (also called <strong>structures</strong> in CF)
-            are variables to which you can attach other values by <strong>name</strong>. For example, I have an object named myCrayon that I am
+            are variables to which you can attach other values by <strong>name</strong>. For example, I have an object named 
+            myCrayon that I am
             going to use to model a crayon. What are the properties that I am going to assign to it? Color? Length?
             Sharpened? Brand? Owner&#x27;s name? We can do all of those. The overall point is that we can refer to the
             properties of the object by their names. We write this in two ways - The first is called &quot;dot notation&quot;.

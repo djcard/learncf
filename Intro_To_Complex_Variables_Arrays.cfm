@@ -41,7 +41,7 @@
             myArray=[&quot;Hello&quot;,&quot;Goodbye&quot;,{}]&gt;</p>
         <p id="a07e67e4-5a02-4b59-ae4c-1c6ef8035771" class=""><strong>Exercise</strong>: Create a file named &quot;myArray.cfm&quot;
             in the exercises folder. Create complex objects using the same model you created on the last page and
-            populate three more of them with three more books from the 10 Books Exercise. Put one of the objects in its
+            populate three more of them with three more books from the 10 Books Exercise. Put each of the objects in its
             own index in an Array and dump it out. Are you starting to see how an array of objects can be a powerful
             thing? If not, no stress but stay tuned. I know that this exercise is repetitive. In a few screens we are
             going to see how we can make the computer create the objects and arrays we want more easily and

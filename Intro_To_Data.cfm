@@ -9,6 +9,14 @@
         database name in the CF server so that when we are writing code, we can simply reference that datasource
         without having to put the username and password embedded in the source code. There are plusses and minuses with
         that approach but it does make thing easier for us as programmers.</p>
+        <p>Note: Before continuing, please follow these directions:
+            <ol>
+                <li>Open your IDE and navigate to your personal folder.</li>
+                <li>Open the file called Application.cfc</li>
+                <li>Near the top of the page will be the line <code>this.dsource = '';</code>. Change that to be your username for this class. (i.e. <code>this.dsource = 'DanCard';</code>)</li>
+                <li>Use CommandBox to navigate to the root of your local site and restart the server ( <code>server restart</code>).</li>
+            </ol>
+        </p>
         <p id="d293e035-81d9-402f-8681-54fb354a86f1" class="">Everyone in the class has a unique datasource which points
             to their database. For example, CF has a tag called &lt;cfdbinfo&gt; which allows us to connect to the
             database and see some of the its contents. In this case, it is set up to use your personal datasource. It

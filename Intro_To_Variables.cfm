@@ -33,12 +33,12 @@
         <p id="50977eab-4dd9-48b1-8ed5-f946e4d21031" class="">Were you able to figure it out? It quite possibly might be
             a dateFormatter but that&#x27;s just a theory.</p>
         <p id="640fea9e-c8d0-4c85-bdbf-d58a28b92aa1" class="">Which brings up a good point: if a variable can be
-            anything (date, number, string) and we need it to be something in particular, how can we check and see type
+            anything (date, number, string) and we need it to be something in particular, how can we check and see what type
             of variable it is? CF (and other languages) give us a way of testing the TYPE of a variable as well as the
             value of that variable. For example, to test if something is a date you can type #isValid("date",variablename)#. We
             can see if our todayDate variable is a date by typing #isValid("date",todayDate)# and we get: true . ColdFusion
-            outputs Booleans (Yes/No variables, remember?) as literally YES or NO. You can also use True or False, 1 or
-            0, or blank and non-blank to set a boolean but it will display as YES/NO.</p>
+            outputs Booleans (Yes/No variables, remember?) as literally YES or NO. You can also use True or False (not in quotes!), or 1 or
+            0 to set a boolean but it will display as YES/NO.</p>
         <hr />
         <p>You can see all the isValid possibilities here: <a target="_blank" href="https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-in-k/isvalid.html">https://helpx.adobe.com/coldfusion/cfml-reference/coldfusion-functions/functions-in-k/isvalid.html</a></p>
         <hr />

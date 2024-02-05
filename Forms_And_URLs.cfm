@@ -9,7 +9,7 @@
         </p>
         <p id="00ffa2e2-1422-4aba-9230-9b83e4174c21" class="">Look at the URL of this page. It is
 			<cfoutput>http://#cgi.HTTP_HOST##cgi.SCRIPT_NAME#?#cgi.QUERY_STRING#</cfoutput>. Have you ever looked at a URL and dissected
-            it? The URL break down into several parts:</p>
+            it? The URL breaks down into several parts:</p>
 <cfoutput>
         <ol type="1" id="77cfa633-4b07-46eb-b6a7-978112f94fb5" class="numbered-list" start="1">
             <li>http:// - The protocol that is being used. Most websites use http:// or https://</li>
