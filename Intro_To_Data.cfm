@@ -14,6 +14,9 @@
                 <li>Open your IDE and navigate to your personal folder.</li>
                 <li>Open the file called Application.cfc</li>
                 <li>Near the top of the page will be the line <code>this.dsource = '';</code>. Change that to be your username for this class. (i.e. <code>this.dsource = 'DanCard';</code>)</li>
+                <li>Also in the Application.cfc, In the function onApplicationStart() you will see the line <code>application.dsource = dsource</code>. Chnage this to be <code>application.dsource = 'yourUserName'</code> ( but type in your actual username ) </li>
+
+                <li>Open the file <code>.env</code>. Made the line <code>PPWD=</code> the password you got from me at the beginning of the semester.</li>
                 <li>Use CommandBox to navigate to the root of your local site and restart the server ( <code>server restart</code>).</li>
             </ol>
         </p>
